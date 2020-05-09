@@ -24,7 +24,7 @@ const ListScreen = () => {
           renderItem={({ item }) => {
             return (
               <Text style={styles.textStyle}>
-                {item.name} - {item.gender} - age {item.age}
+                {item.name} - {item.gender} - Age {item.age}
               </Text>
             );
           }}
