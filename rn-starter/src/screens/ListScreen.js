@@ -35,8 +35,7 @@ const ListScreen = () => {
           marginVertical: 50,
           marginLeft: 60,
           fontWeight: 'bold',
-          fontSize: 18,
-          marginTop: 0,
+          fontSize: 18
           
         }
       });
