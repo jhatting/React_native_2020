@@ -3,28 +3,28 @@ import { View, Text, StyleSheet, FlatList } from 'react-native';
 
 const ListScreen = () => {
     const friends = [
-      { name: 'Friend #1', age: 20 },
-      { name: 'Friend #2', age: 21 },
-      { name: 'Friend #3', age: 22 },
-      { name: 'Friend #4', age: 23 },
-      { name: 'Friend #5', age: 24 },
-      { name: 'Friend #6', age: 25 },
-      { name: 'Friend #7', age: 26 },
-      { name: 'Friend #8', age: 27 },
-      { name: 'Friend #9', age: 28 }
+      { name: 'Friend #1', gender: 'Male', age: 21 },
+      { name: 'Friend #2', gender: 'Female', age: 21 },
+      { name: 'Friend #3', gender: 'Male', age: 22 },
+      { name: 'Friend #4', gender: 'Male', age: 23 },
+      { name: 'Friend #5', gender: 'Female', age: 24 },
+      { name: 'Friend #6', gender: 'Female', age: 25 },
+      { name: 'Friend #7', gender: 'Male', age: 26 },
+      { name: 'Friend #8', gender: 'Female', age: 27 },
+      { name: 'Friend #9', gender: 'Male', age: 28 }
     ];
   
 
     return (
         <FlatList
-          horizontal
+          vertical
           showsHorizontalScrollIndicator={false}
           keyExtractor={friend => friend.name}
           data={friends}
           renderItem={({ item }) => {
             return (
               <Text style={styles.textStyle}>
-                {item.name} - {item.age} years old
+                {item.name} - {item.gender} - age {item.age}
               </Text>
             );
           }}
@@ -34,11 +34,13 @@ const ListScreen = () => {
 
     const styles = StyleSheet.create({
         textStyle: {
-          marginVertical: 50,
-          marginLeft: 60,
+          marginVertical: 10,
+          marginLeft: 0,
           fontWeight: 'bold',
-          fontSize: 18
-          
+          fontSize: 18,
+          color: 'green',
+          borderColor: 'black',
+          borderWidth: 2          
         }
       });
       
