@@ -30,6 +30,16 @@ const ListScreen = () => {
       );
     };
 
-const styles = StyleSheet.create({});
+    const styles = StyleSheet.create({
+        textStyle: {
+          marginVertical: 50,
+          marginLeft: 60,
+          fontWeight: 'bold',
+          fontSize: 18,
+          marginTop: 0,
+          
+        }
+      });
+      
 
 export default ListScreen;
