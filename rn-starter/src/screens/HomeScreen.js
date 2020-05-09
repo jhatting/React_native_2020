@@ -3,7 +3,10 @@ import { Text, StyleSheet, View, Button } from "react-native";
 
 const HomeScreen = () => {
   return <View>
-  <Text style={styles.text}>HomeScreen</Text>
+  <Text style={styles.text}>Home--Screen</Text>
+  <Button 
+    onPress={() => console.log('Button pressed')}
+    title="Go to Components Demo" />
   </View> 
 };
 
