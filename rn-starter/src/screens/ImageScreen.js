@@ -4,7 +4,7 @@ import ImageDetail from '../components/ImageDetail';
 
 const ImageScreen = () => {
     return <View>
-        <ImageDetail />
+        <ImageDetail tile="Forest" />
         <ImageDetail />
         <ImageDetail />
         <ImageDetail />
