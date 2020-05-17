@@ -6,7 +6,7 @@ const CounterScreen = () => {
     return (
     <View>
         <Button
-        title="Increase"
+        title="Increase counter"
         onPress={() => {
             //Don't do this
             //counter++;
